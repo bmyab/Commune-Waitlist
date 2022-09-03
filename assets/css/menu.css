@@ -1,0 +1,28 @@
+.chekbox{
+  display: none;
+}
+.chekbox:checked ~  .menu-icon{
+  background-image: url('../svg/xmark-solid.svg');
+}
+.chekbox:checked ~ .nav {
+  transform: translateY(0%);
+}
+.menu-icon{
+  width: 20px;
+  height: 20px;
+  background-image: url('../svg/bars-solid.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width:800px) {
+  .menu-icon{
+    display: none;
+  }
+  .chekbox:checked ~ .nav {
+    transform:none;
+  }
+}
+
